@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic tac toe | By Rajat Gupta</title>
+    <meta property="og:image" content="https://avatars.slack-edge.com/2017-05-27/188949058290_577ab559045c89cc851b_512.png">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Tic Tac toe</h1>
+        <p>Developed by Rajat Gupta.</p>
+    </header>
+    <div style="height: 50px;"></div>
+    <div id="player_name" style="display: block; zoom: 120%;">
+        <p>Enter player 1 name</p>
+        <input type="text" name="Player 1" id="p1">
+        <p>Enter player 2 name</p>
+        <input type="text" name="Player 2" id="p2">
+        <br>
+        <div style="height: 20px;"></div>
+        <button onclick="start_game()">Start</button>
+    </div>
+    <div style="height: 20px;"></div>
+    <div id="main_game" style="display: none;">
+        <p id="instruct">Game starts</p>
+        <div class="container">
+            <div id="1x1" class="cells" onclick="input(this)"></div>
+            <div id="1x2" class="cells" onclick="input(this)"></div>
+            <div id="1x3" class="cells" onclick="input(this)"></div>
+            <div class="break"></div>
+            <div id="2x1" class="cells" onclick="input(this)"></div>
+            <div id="2x2" class="cells" onclick="input(this)"></div>
+            <div id="2x3" class="cells" onclick="input(this)"></div>
+            <div class="break"></div>
+            <div id="3x1" class="cells" onclick="input(this)"></div>
+            <div id="3x2" class="cells" onclick="input(this)"></div>
+            <div id="3x3" class="cells" onclick="input(this)"></div>
+            <div class="break"></div>
+        </div>
+        <div style="min-height: 40px;"></div>
+        <div id="reset" style="text-align: center; zoom: 200%;" onclick="reset()"><button>Restart</button></div>
+    </div>
+    <div style="min-height: 40vh;"></div>
+    <footer>
+        <p>This game is built on JavaScript | Idea by Himanshu Gupta | &#169 Rajat Gupta</p>
+    </footer>
+</body>
+</html>
